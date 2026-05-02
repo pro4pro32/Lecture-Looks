@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/admin/page": "/admin",
+  "/api/auto-tag/route": "/api/auto-tag",
+  "/api/look-submissions/route": "/api/look-submissions",
+  "/auth/callback/route": "/auth/callback",
+  "/auth/page": "/auth",
+  "/discover/page": "/discover",
+  "/favicon.ico/route": "/favicon.ico",
+  "/feed/page": "/feed",
+  "/lecture-mode/page": "/lecture-mode",
+  "/look/[id]/page": "/look/[id]",
+  "/manifest.webmanifest/route": "/manifest.webmanifest",
+  "/onboarding/page": "/onboarding",
+  "/page": "/",
+  "/profile/page": "/profile",
+  "/saved/page": "/saved",
+  "/trends/page": "/trends"
+}
