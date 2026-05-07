@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --surface: rgb(15 23 42 / 0.72);
+  --surface-border: rgb(251 113 133 / 0.14);
+  --focus-ring: rgb(251 113 133 / 0.8);
+}
+
+.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --surface: rgb(255 255 255 / 0.8);
+  --surface-border: rgb(251 113 133 / 0.22);
+  --focus-ring: rgb(225 29 72 / 0.65);
+}
+
+.soft-pink {
+  --background: #fff1f7;
+  --foreground: #3f1d2e;
+  --surface: rgb(255 255 255 / 0.78);
+  --surface-border: rgb(236 72 153 / 0.2);
+  --focus-ring: rgb(236 72 153 / 0.72);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent-soft: #fb7185;
+  --color-accent-strong: #ec4899;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: rgb(244 63 94);
+  color: white;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+* {
+  border-color: rgb(251 113 133 / 0.1);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.card-shell {
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 42px -30px rgb(251 113 133 / 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
